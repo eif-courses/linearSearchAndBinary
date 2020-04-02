@@ -26,7 +26,7 @@ int Person::binarySearchByPersonId(int id) {
   int l = 0;
   int r = getSizeOfPersonList()-1;
   while(l <= r){
-    int m = l + ( r - 1 ) / 2;
+    int m = l + ( r - l ) / 2;
 
     if(persons[m]->getId() == id){
       return m;
